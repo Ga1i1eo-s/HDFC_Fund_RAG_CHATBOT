@@ -4,4 +4,6 @@ langchain-community
 chromadb
 sentence-transformers
 python-dotenv
-protobuf<5.0.0
+protobuf==3.20.3
+pysqlite3-binary
+

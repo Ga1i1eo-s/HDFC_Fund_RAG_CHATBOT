@@ -4,3 +4,4 @@ langchain-community
 chromadb
 sentence-transformers
 python-dotenv
+protobuf<5.0.0

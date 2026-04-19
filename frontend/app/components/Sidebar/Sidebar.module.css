@@ -1,0 +1,75 @@
+.sidebar {
+  width: 250px;
+  background-color: var(--bg-sidebar);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid var(--border-color);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoArea {
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+}
+
+.logoTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+.portalTitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.premiumTier {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.nav {
+  flex: 1;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background-color: var(--bg-main);
+  color: var(--primary-color);
+}
+
+.navItem.active {
+  background-color: var(--bg-main); /* Slight tint for active */
+  color: var(--primary-color);
+  font-weight: 600;
+  /* Add a subtle blue left border or shadow if needed, per image it's just a white box with shadow */
+  background-color: #ffffff;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}

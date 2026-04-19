@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDFC Mutual Fund Analyst</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo"></div>
+                <h1>MF Analyst</h1>
+            </div>
+            <div class="funds-list">
+                <h3>Tracked Funds</h3>
+                <ul>
+                    <li>HDFC Housing Opps</li>
+                    <li>HDFC Mid-Cap Opps</li>
+                    <li>HDFC Focused 30</li>
+                    <li>HDFC Flexi Cap</li>
+                    <li>HDFC Small Cap</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <p><strong>Pure Retrieval Mode</strong><br>System is currently fetching raw data chunks from ChromaDB.</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-wrapper">
+            <header class="chat-header">
+                <h2>HDFC Mutual Fund Assistant</h2>
+                <span class="status"><span class="dot"></span> Database Connected</span>
+            </header>
+            
+            <div class="chat-container" id="chat-container">
+                <div class="message system">
+                    <div class="avatar">AI</div>
+                    <div class="content">
+                        Hello! I am connected to the HDFC Mutual Fund database. Ask me about NAV, Expense Ratios, Fund Sizes, or general information about the tracked funds!
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form id="chat-form">
+                    <input type="text" id="user-input" placeholder="Ask about HDFC Small Cap NAV..." autocomplete="off">
+                    <button type="submit" id="send-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>

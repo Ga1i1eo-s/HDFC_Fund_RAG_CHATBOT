@@ -1,0 +1,60 @@
+.footer {
+  background-color: #f1f5f9;
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.link {
+  transition: var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--primary-color);
+}
+
+.company {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.socialBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+}
+
+.socialBtn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}

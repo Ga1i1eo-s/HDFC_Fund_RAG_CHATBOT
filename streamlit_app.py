@@ -1,3 +1,7 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 from src.phase_3_2_retrieval.rag_chain import answer_query, setup_rag_chain
 
